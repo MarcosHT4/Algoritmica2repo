@@ -4,8 +4,8 @@ project(Algoritmica2repo)
 set(CMAKE_CXX_STANDARD 14)
 
 
-add_executable(SegmentTree "contenido/Estructuras de Datos/SegmentTree/SegmentTree.cpp")
-add_executable(TrieArray "contenido/Estructuras de Datos/Trie/TrieArray.cpp")
-add_executable(TrieMap "contenido/Estructuras de Datos/Trie/TrieMap.cpp")
-add_executable(CostOfData "contenido/Estructuras de Datos/Trie/ejercicios/CostOfData.cpp")
-add_executable(SearchEngine "contenido/Estructuras de Datos/Trie/ejercicios/SearchEngine.cpp")
+add_executable(SegmentTree "algortimos/estructurasDeDatos/SegmentTree/SegmentTree.cpp")
+add_executable(TrieArray "algortimos/estructurasDeDatos/Trie/TrieArray.cpp")
+add_executable(TrieMap "algortimos/estructurasDeDatos/Trie/TrieMap.cpp")
+add_executable(CostOfData "algortimos/estructurasDeDatos/Trie/ejercicios/CostOfData.cpp")
+add_executable(SearchEngine "algortimos/estructurasDeDatos/Trie/ejercicios/SearchEngine.cpp")
