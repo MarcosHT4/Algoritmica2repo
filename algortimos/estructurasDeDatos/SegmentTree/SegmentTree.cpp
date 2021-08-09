@@ -82,6 +82,36 @@ node query(int ini, int fin, int currentNode, int i, int j) { //ini y fin = Inic
 
 }
 
+void update(int inicio, int fin, int nodoActual, int posicion, int valor) {
+
+    if(posicion<inicio && posicion>fin) { //Si esta posicion no nos interesa, esto es lo que filtra los nodos que no nos interesa
+
+        return; //No hacemos nada
+
+    }
+
+    if(inicio==fin) { //Si inicio es igual a fin, significa que ya hemos llegado al nodo que queremos cambiar, por lo que podemos poner el valor
+
+        segmentTree[nodoActual].maximo = valor;
+        segmentTree[nodoActual].minimo = valor;
+        segmentTree[nodoActual].suma = valor;
+
+    } else { //Si todavia no entramos al if, estamos en las ramas superiores del arbol
+
+        int medio = (inicio + fin)/2;  //Obtenemos la mitad de ini y fin para poder ver por cual rama ir
+        int hijoIzquierda =  2*nodoActual+1; //Se sabe que 2*currentNode+1 devuelve el hijo de la izquierda
+        int hijoDerecha = 2*nodoActual+2; //Se sabe que 2*currentNode+2 devuelve el hijo de la derecha
+
+        update(inicio, medio, hijoIzquierda, posicion, valor); //Buscamos por la rama de la izquierda
+        update(medio+1, fin, hijoDerecha, posicion, valor); //Buscamos por la rama de la derecha
+
+        segmentTree[nodoActual].suma = segmentTree[hijoIzquierda].suma + segmentTree[hijoDerecha].suma; //Volvemos a actualizar los nodos padres, una vez actualizado el hijo, si el hijo no se actualiza, los padres no cambian
+        segmentTree[nodoActual].maximo = max(segmentTree[hijoIzquierda].maximo,  segmentTree[hijoDerecha].maximo);
+        segmentTree[nodoActual].minimo = min(segmentTree[hijoIzquierda].minimo, segmentTree[hijoDerecha].minimo);
+
+
+    }
+
 int main() {
 
     init(0,10,0); //El primer nodo es el de la posicion 0, el utlimo nodo esta en la posicion 7 y el nodo actual empieza en la posicion 0
