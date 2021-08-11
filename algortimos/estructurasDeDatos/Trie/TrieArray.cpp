@@ -105,7 +105,7 @@ void isThereWord(string word) {
 
 }
 
-<<<<<<< HEAD
+
 int main()
 
 {
@@ -118,7 +118,7 @@ int main()
     insertWord(word1);
     isThereWord(word1);
     isThereWord(word);
-=======
+
 
 
 
@@ -127,7 +127,6 @@ int main()
 
 int main() {
 
->>>>>>> c0d514e (New Bit)
 
 
     
