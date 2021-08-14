@@ -12,6 +12,9 @@ encontrarán los sub-temas pertenecientes a los temas, los cuales contienen el c
 a ejercicios no-directamente relacionados con los jueces virtuales, como ejemplos del funcionamiento del algoritmo/estructura de datos.
 
 ## [Estructuras de Datos](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/estructurasDeDatos)
+- [Trie](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/estructurasDeDatos/Trie)
+- [Segment Tree](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/estructurasDeDatos/SegmentTree)
+- [BIT](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/estructurasDeDatos/BIT)
 ## [Backtracking](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/backtracking)
 ## [Teoría de Grafos](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/teoriaDeGrafos)
 ## [Programacion Dinamica](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica)

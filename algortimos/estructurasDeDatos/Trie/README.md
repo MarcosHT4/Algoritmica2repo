@@ -1,4 +1,4 @@
-#Trie
+# Trie
 En el mundo de la informática, el Trie, también conocido como Prefix Tree o
 Digital Tree es una estructura de datos ordenada basada en árbol, el cual es utilizado
 para almaceanar arreglos asociativos, donde las llaves son usualmente strings.
