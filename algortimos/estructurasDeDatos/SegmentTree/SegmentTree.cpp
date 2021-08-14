@@ -112,10 +112,12 @@ void update(int inicio, int fin, int nodoActual, int posicion, int valor) {
 
     }
 
+}
+
 int main() {
 
     init(0,10,0); //El primer nodo es el de la posicion 0, el utlimo nodo esta en la posicion 7 y el nodo actual empieza en la posicion 0
-    cout << query(0,10,0,0,10).suma<<endl; //Queremos el minimo
+    cout << query(0,10,0,0,3).suma<<endl; //Queremos la suma de 0 a 10
 
     return 0;
 
