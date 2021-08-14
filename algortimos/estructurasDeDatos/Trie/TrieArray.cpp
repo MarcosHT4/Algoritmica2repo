@@ -106,18 +106,124 @@ void isThereWord(string word) {
 }
 
 
+/*
+ *  El metodo deleteWord() puede ser implementado de dos maneras distintas: La primera es ir al final de una palabra, y en su ultimo nodo, quitarle
+ *  el estado de isWord. La segunda manera es directamente poner en NULL los nodos que pertenecen a la palabra. Se veran las dos implementaciones.
+ */
+
+
+void deleteWord1(string word) {
+
+    node *currentNode = trie; //Nos ponemos en el primer nodo del Trie
+
+    for(int i = 0; i<word.size(); i++) { //Iteramos en todos los caracteres de la palabra
+
+        int character = word[i] - 'a'; //Guardamos en formato entero (0-26) el caracter actual
+
+        if(currentNode->children[character] == NULL) { //Si el nodo actual no contiene como hijo nuestro caracter actual, significa que directamente no hay palabra, por lo que no devolvemos nada
+
+            return;
+
+        }
+
+        currentNode = currentNode->children[character]; //En caso de que si lo contenga, nos movemos al hijo, es decir, nuestro actual se vuelve el hijo
+
+    }
+
+    currentNode->isWord = false; //Si llegamos al final, significa que hemos encontrado ya sea una palabra o un prefijo, por lo que en todo caso, quitamos el isWord
+
+}
+
+bool hasChildren(node* node) {
+
+    for(int i = 0; i<26; i++) {
+
+        if(node->children[i]) {
+
+            return true;
+
+        }
+
+    }
+
+    return false;
+
+}
+
+node* deleteWord2(node *currentNode, string word, int level) { //Necesitamos un level para poder guardar constancia de la profundidad del Trie
+
+
+    if(level == word.length()) { //Caso Base, si llegamos al final de la palabra
+
+        if(currentNode->isWord) {
+
+            currentNode->isWord = false; //Si el ultimo nodo representa una palabra, entonces lo volvemos false
+
+        }
+
+        if(!hasChildren(currentNode)) { //Si el nodo actual no tiene hijos, significa que lo podemos borrar, ya que no es parte de otra palabra la cual no queremos borrar
+
+            delete(currentNode); //Borramos el nodo
+            currentNode = nullptr;
+
+        }
+
+        return currentNode;
+
+
+
+    }  //Si no, significa que todavia estamos en otra parte de la palabra
+
+    int character = word[level] - 'a'; //Guardamos el caracter que representa el nivel actual de la palabra
+    currentNode->children[character] = deleteWord2(currentNode->children[character],word, level+1); //Recursivamente, seguimos al siguiente caracter de la palabra con un siguiente nivel
+
+    if(!hasChildren(currentNode) && !currentNode->isWord) { //Una vez terminada la recursividad, se verifica si el nodo padre todavia tiene hijos, si tiene significa que es parte de otra palabra, por lo tanto no lo borramos
+
+        delete(currentNode);
+        currentNode = nullptr;
+
+
+    }
+
+    return currentNode;
+
+
+}
+
 int main()
 
 {
 
     init();
+
+    /* Test Case deleteWord1()
+
+
     string word = "ala";
-    string word1 = "alan";
+
     insertWord(word);
     isThereWord(word);
-    insertWord(word1);
-    isThereWord(word1);
+    deleteWord1(word);
     isThereWord(word);
+
+     */
+
+    /* Test Case deleteWord2()
+
+    string word = "pata";
+    string word1 = "patada";
+
+    node *currentNode = trie;
+    insertWord(word);
+    insertWord(word1);
+    isThereWord(word);
+    isThereWord(word1);
+    deleteWord2(currentNode, word1, 0);
+    isThereWord(word);
+    isThereWord(word1);
+
+     */
+
 
 
 
