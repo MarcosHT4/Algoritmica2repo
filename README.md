@@ -17,7 +17,7 @@ a ejercicios no-directamente relacionados con los jueces virtuales, como ejemplo
 - [BIT](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/estructurasDeDatos/BIT)
 - [Union Find](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/estructurasDeDatos/UnionFind)
 ## [Backtracking](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/backtracking)
-- [Backtracking](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/backtracking)
+- [Nqueens](https://github.com/MarcosHT4/Algoritmica2repo/blob/master/algortimos/backtracking/Nqueens.cpp)
 ## [Teoría de Grafos](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/teoriaDeGrafos)
 ## [Programacion Dinamica](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica)
 ## [Teoria de Numeros](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/teoriaDeNumeros)
