@@ -18,8 +18,12 @@ a ejercicios no-directamente relacionados con los jueces virtuales, como ejemplo
 - [Union Find](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/estructurasDeDatos/UnionFind)
 ## [Backtracking](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/backtracking)
 - [Nqueens](https://github.com/MarcosHT4/Algoritmica2repo/blob/master/algortimos/backtracking/Nqueens.cpp)
+- [Edit Distance Backtracking](https://github.com/MarcosHT4/Algoritmica2repo/blob/master/algortimos/backtracking/EditDistanceBackT.cpp)
 ## [Teoría de Grafos](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/teoriaDeGrafos)
 ## [Programacion Dinamica](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica)
+- [Digit DP](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica/DigitDP)
+- [Rod Cutting DP](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica/RodCutting)
+- [Edit Distance DP](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica/RodCutting)
 ## [Teoria de Numeros](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/teoriaDeNumeros)
 ## [Geometria Analitica](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/geometriaAnalitica)
 
