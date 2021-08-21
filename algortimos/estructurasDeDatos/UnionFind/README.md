@@ -3,11 +3,11 @@ En la informática, el Union Find, también conocido como estructura de datos pa
 disjuntos, es una estructura de datos que tiene la capacidad de almacenar una colección de conjuntos
 que no están en overlap, es decir, poder generar "grupos" de elementos, los cuales están aislados de otros grupos.
 
-![Union Find](https://miro.medium.com/max/1400/1*CNap21hHiCEQWRceTNIUqg.png)
+![Union Find](https://he-s3.s3.amazonaws.com/media/uploads/a1f5858.jpg)
 
-Para poder realizar la operaci'on antes mencionada, el Union Find posee dos operaciones
+Para poder realizar la operación antes mencionada, el Union Find posee dos operaciones
 internas, las cuales son: Find (encontrar el padre de todos los nodos de un grupo)
-y Union (unir dos nodos), las cuales tienen tiempos de comejidad de
+y Union (unir dos nodos), las cuales tienen tiempos de complejidad de
 O(logn) y O(1) respectivamente.
 
 ## Código Base
