@@ -11,8 +11,8 @@ llamados recursivos, para poder acceder a los diferentes casos; por lo tanto, se
 utilizan un recorrido DFS para poder visitar todas las soluciones; para posteriormente ir descartando las que no son útiles.
 
 ## Aplicaciones del Backtracking
-- [NQueens](https://github.com/MarcosHT4/Algoritmica2repo/blob/master/algortimos/backtracking/Nqueens.cpp)
-- [EditDistance](https://github.com/MarcosHT4/Algoritmica2repo/blob/master/algortimos/backtracking/EditDistanceBackT.cpp)
+- [NQueens](https://github.com/MarcosHT4/Algoritmica2repo/blob/master/algortimos/backtracking/Nqueens.cpp) _C++_
+- [EditDistance](https://github.com/MarcosHT4/Algoritmica2repo/blob/master/algortimos/backtracking/EditDistanceBackT.cpp) _C++_
 
 ## Referencias
 - [Backtracking](https://en.wikipedia.org/wiki/Backtracking)

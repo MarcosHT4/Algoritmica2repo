@@ -84,7 +84,7 @@ node query(int ini, int fin, int currentNode, int i, int j) { //ini y fin = Inic
 
 void update(int inicio, int fin, int nodoActual, int posicion, int valor) {
 
-    if(posicion<inicio && posicion>fin) { //Si esta posicion no nos interesa, esto es lo que filtra los nodos que no nos interesa
+    if(posicion<inicio || posicion>fin) { //Si esta posicion no nos interesa, esto es lo que filtra los nodos que no nos interesa
 
         return; //No hacemos nada
 

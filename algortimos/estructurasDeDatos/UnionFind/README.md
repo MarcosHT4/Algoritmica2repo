@@ -11,7 +11,7 @@ y Union (unir dos nodos), las cuales tienen tiempos de complejidad de
 O(logn) y O(1) respectivamente.
 
 ## Código Base
-- [UnionFind.cpp](https://github.com/PaulLandaeta/algoritmica2/blob/master/contenido/Estructura_de_datos/Union_Find/unionFind.cpp)
+- [UnionFind.cpp](https://github.com/PaulLandaeta/algoritmica2/blob/master/contenido/Estructura_de_datos/Union_Find/unionFind.cpp) _C++_
 
 ## Referencias
 - [Disjoint-set data structure](https://en.wikipedia.org/wiki/Disjoint-set_data_structure)

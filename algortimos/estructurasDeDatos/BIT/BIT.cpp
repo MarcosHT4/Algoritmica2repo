@@ -8,7 +8,7 @@ void update(int posicion, int valor ) { //Sirve para ya sea poder crear o actual
     // valores = [4,6,3,2,5]
     // posiciones = [1,2,3,4,5], ya que la posicion 0 esta reservada para el nodo fantasma
     for(;posicion <= tamanhoVector ;posicion += posicion&-posicion) { //Empezamos en la posicion del valor actual (se van cambiando los valores en el main)
-        //Posteriormente, en esa posicion, añadimos el valor corresponidiente.
+                                                                      //Posteriormente, en esa posicion, añadimos el valor corresponidiente.
         BIT[posicion] += valor;                                       //La posicion del BIT donde se guardan los valores, va cambiando, ya que se le suna a la posicion, su bit menos significativo
     }                                                                 //Cada uno de los numeros que representan las posiciones, se ven representados en el dibujo como las rayas
 }
