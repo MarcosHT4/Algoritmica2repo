@@ -23,7 +23,7 @@ a ejercicios no-directamente relacionados con los jueces virtuales, como ejemplo
 ## [Programacion Dinamica](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica)
 - [Digit DP](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica/DigitDP)
 - [Rod Cutting DP](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica/RodCutting)
-- [Edit Distance DP](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica/RodCutting)
+- [Edit Distance DP](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica/EditDistance)
 ## [Teoria de Numeros](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/teoriaDeNumeros)
 ## [Geometria Analitica](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/geometriaAnalitica)
 
