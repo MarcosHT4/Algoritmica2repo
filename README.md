@@ -20,11 +20,16 @@ a ejercicios no-directamente relacionados con los jueces virtuales, como ejemplo
 - [Nqueens](https://github.com/MarcosHT4/Algoritmica2repo/blob/master/algortimos/backtracking/Nqueens.cpp)
 - [Edit Distance Backtracking](https://github.com/MarcosHT4/Algoritmica2repo/blob/master/algortimos/backtracking/EditDistanceBackT.cpp)
 ## [Teoría de Grafos](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/teoriaDeGrafos)
+- [Kruskal](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/teoriaDeGrafos/Kruskal)
+- [Prim](https://github.com/MarcosHT4/Algoritmica2repo/blob/master/algortimos/teoriaDeGrafos/Prim)
+- [Edmonds Karp](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/teoriaDeGrafos/EdmondsKarp)
+- [Dinic](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/teoriaDeGrafos/Dinic)
 ## [Programacion Dinamica](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica)
 - [Digit DP](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica/DigitDP)
 - [Rod Cutting DP](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica/RodCutting)
 - [Edit Distance DP](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica/EditDistance)
 ## [Teoria de Numeros](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/teoriaDeNumeros)
+- [Búsqueda Binaria](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/teoriaDeNumeros/BusquedaBinaria)
 ## [Geometria Analitica](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/geometriaAnalitica)
 
 
