@@ -14,7 +14,7 @@ es de O(mlogn).
 
 ## Código Base
 
-- [Kruskal.cpp](https://github.com/MarcosHT4/Algoritmica2repo/blob/master/algortimos/teoriaDeGrafos/Kruskal/Kruskal.cpp)
+- [Kruskal.cpp](https://github.com/MarcosHT4/Algoritmica2repo/blob/master/algortimos/teoriaDeGrafos/Kruskal/Kruskal.cpp) - _C++_
 
 ## Referencias
 
