@@ -30,7 +30,8 @@ a ejercicios no-directamente relacionados con los jueces virtuales, como ejemplo
 - [Edit Distance DP](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/programacionDinamica/EditDistance)
 ## [Teoria de Numeros](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/teoriaDeNumeros)
 - [Búsqueda Binaria](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/teoriaDeNumeros/BusquedaBinaria)
-## [Geometria Analitica](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/geometriaAnalitica)
+## [Geometria Computacional](https://github.com/MarcosHT4/Algoritmica2repo/tree/master/algortimos/geometriaAnalitica)
+- [Geometría Analítica y Convex Hull](https://github.com/MarcosHT4/Algoritmica2repo/blob/master/algortimos/geometriaAnalitica/GeometriaComputacional.cpp)
 
 
 
