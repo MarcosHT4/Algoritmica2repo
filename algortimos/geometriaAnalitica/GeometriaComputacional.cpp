@@ -9,6 +9,8 @@ using namespace std;
 struct Point{
     double x, y; //Las coordenadas x, y del punto
 
+    Point(){}
+
 
     Point(double a,double b) { //Constructor para el punto
         x = a;
@@ -174,38 +176,67 @@ bool intersectsSegment(const Point &A,const Point &B,const Point &C,const Point 
 // poligono Convexo o No convexo
 
 bool isConvex(const vector<Point> &polign) {
-    int nroPoints = polign.size();
+    int nroPoints = polign.size(); //Número de puntos de intersección el el polígono
     int areasPositive =  0, areasNegative = 0;
-    for(int i = 0; i < nroPoints ;i++) {
-        double areaPoints = area(polign[i],polign[(i+1)%nroPoints],polign[(i+2)%nroPoints]);
-        if(areaPoints>0) {
+    for(int i = 0; i < nroPoints ;i++) { //Recorremos todos los puntos del polígonos
+        double areaPoints = area(polign[i],polign[(i+1)%nroPoints],polign[(i+2)%nroPoints]);  //El area que crea cada trio de puntos,para que sea convexo, todas las áreas deberían darnos 0
+        if(areaPoints>0) { //En el punto de que el area que forma el punto sea mayor a 0 o menor a 0, aumentamos el contador de areas positivas o negativas, las areas deberian ser solo positivas o solo negativas para ser convexo
             areasPositive++;
         } else if(areaPoints<0) {
             areasNegative++;
         }
     }
-    return areasPositive == 0 || areasNegative == 0;
+    return areasPositive == 0 || areasNegative == 0; //Si resulta que alguna de las dos es es 0, automaticamente es convexo; solo es no convexo si tiene areas positivas y ademas negativas
 }
+
+bool pointInConvex(const vector<Point> &polign, const Point &P) {
+
+    int nroPoints = polign.size();
+
+    int areasPositive = 0, areasNegative;
+
+    for(int i = 0; i< nroPoints; i++) {
+
+        double areaPoints = area(P, polign[i], polign[(i+1)%nroPoints]);
+
+        if(areaPoints>0) {
+
+            areasPositive++;
+
+        } else if (areaPoints<0) {
+
+            areasNegative++;
+
+        }
+
+
+    }
+
+    return areasPositive == 0 || areasNegative == 0;
+
+
+}
+
 
 // Area de un Poligono
 
-double areaPoligono(const vector<Point> &poligono) {
+double areaPoligono(const vector<Point> &poligono) { //Recibe un poligono
     int nroPoints = poligono.size();
     double areaTotal = 0;
-    for(int i = 1; i < nroPoints - 1; i++) {
-        areaTotal += area(poligono[0],poligono[i],poligono[i+1]);
+    for(int i = 1; i < nroPoints - 1; i++) { //Partimos desde 1, ya que 0 es nuestro punto de inicio
+        areaTotal += area(poligono[0],poligono[i],poligono[i+1]);  //A partir del punto 0, sacamos todas las areas que hay a prtir de A a las siguientes puntos
     }
-    return abs(areaTotal/2);
+    return abs(areaTotal/2);  //Quitamos la mitad, para que no esté el sobrante del área
 }
 
 // Convex Hull
 
-/*
+
 
 vector<Point> convexHull(vector<Point> &points) {
-    sort(points.begin(),points.end());
+    sort(points.begin(),points.end()); //Ordenamos los puntos de izq a der (respecto a x), y si su x es igual, de abajo a arriba (respecto a y)
     int k = 0;
-    Point hulls[points.size()+10];   // podriamos usar una pila
+    Point hulls[points.size()];   // podriamos usar una pila
     // Parte Inferior
     for(int i = 0; i<points.size();i++){
         while(k>=2 && area(hulls[k-2],hulls[k-1],points[i])<=0) {
@@ -217,7 +248,7 @@ vector<Point> convexHull(vector<Point> &points) {
     // Parte Superior
 
     for(int i = points.size()-2, t = k;i>=0; i--) {
-        while( k > t && area(hulls[k-2],hull[k-1],points[i]<=0)){
+        while( k > t && area(hulls[k-2],hulls[k-1],points[i])<=0){
             k--;
         }
         hulls[k++] = points[i];
@@ -226,7 +257,7 @@ vector<Point> convexHull(vector<Point> &points) {
     return vector<Point> (hulls,hulls+k-1);
 }
 
- */
+
 
 int main() {
 
@@ -238,7 +269,5 @@ int main() {
 
 
 }
-
-
 
 
